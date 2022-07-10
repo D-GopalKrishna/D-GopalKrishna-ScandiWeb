@@ -71,7 +71,7 @@ class MiniCartDropdown extends Component {
             }
         }
 
-        console.log(stateTotalAmount);
+        // console.log(stateTotalAmount);
         this.setState({totalAmount: stateTotalAmount});
     }
 
@@ -173,7 +173,7 @@ class MiniCartDropdown extends Component {
                                                                                                 <div style={{display: 'flex', marginTop: '-20px'}}>
                                                                                                     {data.items.map((item, id) =>
                                                                                                         {
-                                                                                                            console.log(Cartitem);
+                                                                                                            // console.log(Cartitem);
                                                                                                             if (id === Cartitem.sizeChosen) {
                                                                                                                 return(
                                                                                                                     <p style={{ fontSize: '13px', color: '#fff', background: '#000', padding: '0px 2px', border: '1px solid #000',  height: '22px', width: '18px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginRight: '5px' }} onClick={() => this.setState({sizeChosen: id})}>{item.value}</p>

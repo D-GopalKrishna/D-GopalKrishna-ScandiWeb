@@ -263,7 +263,7 @@ class Cart extends Component {
                         <p style={{fontSize: '17px', marginBottom: '-5px'}}>Quantity: <span style={{fontWeight: '800', marginLeft: '10px' }}>{this.state.cartitems.length}</span></p>
                         <p style={{fontSize: '17px'}}>Total: <span style={{fontWeight: '800', marginLeft: '10px' }}>{this.props.currencyused} {this.state.totalAmount.find(i => i.currency.symbol === this.props.currencyused) ? Math.round(Math.round(this.state.totalAmount.find(i => i.currency.symbol === this.props.currencyused).amount*21)/2 + Math.round(this.state.totalAmount.find(i => i.currency.symbol === this.props.currencyused).amount*100)/2)/100 : ''}</span></p>
 
-                        <button style={{marginTop: '5px', background: '#5ECE7B', border: 'none', width: '250px', padding: '15px', color: '#fff', fontWeight: '600'}}>ADD TO CART</button>
+                        <button style={{marginTop: '5px', background: '#5ECE7B', border: 'none', width: '250px', padding: '15px', color: '#fff', fontWeight: '600', marginBottom: '20vh'}}>ADD TO CART</button>
                     </div>
                 )}
 
