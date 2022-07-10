@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 
 import EmptyCartWhite from "../assets/EmptyCartWhite.png";
+import Navbar from "./components/Navbar";
 
 
 import { Query } from "@apollo/client/react/components";
@@ -28,6 +29,8 @@ class Category extends Component {
     render() {
         return (
             <div>
+                <Navbar />
+
                 <h2 style={{marginTop: '5vh', fontWeight: '500', fontSize: '30px'}}>{this.capitalize()}</h2>
 
                 <div style={{marginTop: '6vh', marginBottom: '20vh', marginLeft: '-8px', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gridGap: '30px', width: '100%'}}>

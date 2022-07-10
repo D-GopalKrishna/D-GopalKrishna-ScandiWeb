@@ -4,6 +4,7 @@ import parse from 'html-react-parser';
 import { connect } from 'react-redux';
 import { Link, Navigate } from "react-router-dom";
 
+import NavbarSecondary from "./components/NavbarSecondary";
 
 import { Query } from "@apollo/client/react/components";
 import { LOAD_CATEGORIES, LOAD_CATEGORY, LOAD_INDIVIDUAL_PRODUCT, LOAD_CURRENCY } from "../graphql/queries";
@@ -109,6 +110,8 @@ class PDP extends Component {
     render() {
         return (
         <div >
+            <NavbarSecondary />
+
             <Query query={LOAD_INDIVIDUAL_PRODUCT} variables={{"id": window.location.href.split('/')[4]}}>
                 {({ error, loading, data }) => {
                     if (loading) return <p>Loading...</p>;
@@ -271,3 +274,4 @@ const MainImageItem = styled.img`
     object-position: 50% 50%; 
     // border-radius: 5px;
 `
+
